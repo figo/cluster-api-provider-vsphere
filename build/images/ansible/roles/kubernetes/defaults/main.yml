@@ -15,17 +15,17 @@
 kubernetes_semver: "latest"
 kubernetes_source: "pkg"
 kubernetes_version: "latest"
-kubernetes_cni_version: "latest"
+kubernetes_cni_version: "0.7.5-1.el7.vmware.1"
 
-kubernetes_rpm_repo: "https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64"
-kubernetes_rpm_gpg_key: "https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg"
+kubernetes_rpm_repo: "https://downloads.heptio.com/essential-pks/523a448aa3e9a0ef93ff892dceefee0a/rpms/"
+kubernetes_rpm_gpg_key: "https://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub"
 kubernetes_rpm_gpg_check: True
 
 # Currently Kubernetes does not publish a repo specifically for Bionic, instead hardcode xenial here for now
 # https://github.com/kubernetes/release/issues/557
 #kubernetes_deb_repo: "http://apt.kubernetes.io/ kubernetes-' ~ (ansible_distribution_release | lower)"
-kubernetes_deb_repo: "http://apt.kubernetes.io/ kubernetes-xenial"
-kubernetes_deb_gpg_key: "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+kubernetes_deb_repo: "https://downloads.heptio.com/essential-pks/523a448aa3e9a0ef93ff892dceefee0a/debs/"
+kubernetes_deb_gpg_key: "https://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub"
 
 kubernetes_bins:
 - kubeadm

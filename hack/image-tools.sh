@@ -147,7 +147,7 @@ ensure_packer_goss() {
   chmod 0755 "${_binfile}"
 }
 
-#ensure_ansible
+ensure_ansible
 #ensure_jq
 #ensure_packer
 ensure_packer_goss

@@ -6,7 +6,7 @@
     "capv_version": "",
     "existing_ansible_ssh_args": "{{env `ANSIBLE_SSH_ARGS`}}",
     "headless": "true",
-    "kubernetes_cni_version": "0.7.5-00",
+    "kubernetes_cni_version": "0.7.5-1.el7.vmware.1",
     "kubernetes_semver": "v1.13.6",
     "kubernetes_source": "pkg",
     "kubernetes_version": "1.13.6-00",
